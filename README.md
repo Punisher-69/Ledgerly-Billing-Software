@@ -1,91 +1,121 @@
-# electron-vite-react
+# Ledgerly – Desktop Billing Software
 
-[![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite)
-![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/vite-react-electron?color=fa6470)
-![GitHub issues](https://img.shields.io/github/issues/caoxiemeihao/vite-react-electron?color=d8b22d)
-![GitHub license](https://img.shields.io/github/license/caoxiemeihao/vite-react-electron)
-[![Required Node.JS >= 14.18.0 || >=16.0.0](https://img.shields.io/static/v1?label=node&message=14.18.0%20||%20%3E=16.0.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
+<p align="center">
+  <img src="./assets/ledgerly-banner.png" alt="Ledgerly Logo" width="220">
+</p>
 
-English | [简体中文](README.zh-CN.md)
+<p align="center">
+  <strong>A lightweight desktop billing application built with Electron, React, and SQLite.</strong>
+</p>
 
-## 👀 Overview
+---
 
-📦 Ready out of the box  
-🎯 Based on the official [template-react-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts), project structure will be familiar to you  
-🌱 Easily extendable and customizable  
-💪 Supports Node.js API in the renderer process  
-🔩 Supports C/C++ native addons  
-🐞 Debugger configuration included  
-🖥 Easy to implement multiple windows  
+## ✨ Features
 
-## 🛫 Quick Setup
+* 🧾 Create and manage invoices
+* 📦 Add, edit, and delete products
+* 💰 Automatic bill calculations
+* 📊 Track sales history
+* 📄 Export sales reports as PDF
+* 🔒 Simple authentication
+* 💾 Local SQLite database (offline support)
+* ⚡ Fast desktop experience powered by Electron
 
-```sh
-# clone the project
-git clone https://github.com/electron-vite/electron-vite-react.git
+---
 
-# enter the project directory
-cd electron-vite-react
+## 🖥️ Screenshots
 
-# install dependency
+> Add screenshots here after your first release.
+
+Example:
+
+```md
+![Dashboard](./assets/dashboard.png)
+
+![Billing Screen](./assets/billing.png)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* Electron.js
+* React
+* Vite
+* TypeScript
+* SQLite (better-sqlite3)
+* Electron Builder
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Punisher-69/Ledgerly-Billing-Software.git
+```
+
+Install dependencies:
+
+```bash
 npm install
+```
 
-# develop
+Run the application:
+
+```bash
 npm run dev
 ```
 
-## 🐞 Debug
+Build the application:
 
-![electron-vite-react-debug.gif](/electron-vite-react-debug.gif)
-
-## 📂 Directory structure
-
-Familiar React application structure, just with `electron` folder on the top :wink:  
-*Files in this folder will be separated from your React application and built into `dist-electron`*  
-
-```tree
-├── electron                                 Electron-related code
-│   ├── main                                 Main-process source code
-│   └── preload                              Preload-scripts source code
-│
-├── release                                  Generated after production build, contains executables
-│   └── {version}
-│       ├── {os}-{os_arch}                   Contains unpacked application executable
-│       └── {app_name}_{version}.{ext}       Installer for the application
-│
-├── public                                   Static assets
-└── src                                      Renderer source code, your React application
+```bash
+npm run build
 ```
 
-<!--
-## 🚨 Be aware
+---
 
-This template integrates Node.js API to the renderer process by default. If you want to follow **Electron Security Concerns** you might want to disable this feature. You will have to expose needed API by yourself.  
+## 📁 Project Structure
 
-To get started, remove the option as shown below. This will [modify the Vite configuration and disable this feature](https://github.com/electron-vite/vite-plugin-electron-renderer#config-presets-opinionated).
-
-```diff
-# vite.config.ts
-
-export default {
-  plugins: [
-    ...
--   // Use Node.js API in the Renderer-process
--   renderer({
--     nodeIntegration: true,
--   }),
-    ...
-  ],
-}
+```text
+.
+├── electron/
+│   ├── main/
+│   └── preload/
+├── src/
+├── assets/
+├── public/
+├── package.json
+└── README.md
 ```
--->
 
-## 🔧 Additional features
+---
 
-1. electron-updater 👉 [see docs](src/components/update/README.md)
-1. playwright
+## 🗄️ Database
 
-## ❔ FAQ
+Ledgerly uses **SQLite** with **better-sqlite3**, allowing all billing data to be stored locally without requiring an internet connection.
 
-- [C/C++ addons, Node.js modules - Pre-Bundling](https://github.com/electron-vite/vite-plugin-electron-renderer#dependency-pre-bundling)
-- [dependencies vs devDependencies](https://github.com/electron-vite/vite-plugin-electron-renderer#dependencies-vs-devdependencies)
+---
+
+## 📦 Releases
+
+Download the latest Windows release from the **Releases** section of this repository.
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and bug reports are welcome. Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Punisher-69**.
