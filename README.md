@@ -114,7 +114,7 @@ Ledgerly uses **SQLite** with **better-sqlite3**, allowing all billing data to b
 
 ## 📦 Releases
 
-Download the latest Windows release from the **Releases** section of this repository.
+Download the latest Windows version of **Ledgerly** from the **[Releases](../../releases)** page.
 
 ---
 
