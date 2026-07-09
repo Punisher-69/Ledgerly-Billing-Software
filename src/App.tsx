@@ -7,7 +7,7 @@ import { Products } from "@/pages/Products";
 import { Invoice } from "@/pages/Invoice";
 import { Bills } from "@/pages/Bills";
 import { Reports } from "@/pages/Reports";
-import { Settings } from "@/pages/Settings";
+// import { Settings } from "@/pages/Settings";
 import { getApi } from "@/lib/api";
 
 export default function App() {

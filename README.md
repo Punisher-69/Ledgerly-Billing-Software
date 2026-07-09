@@ -12,39 +12,53 @@
 
 ## ✨ Features
 
-* 🧾 Create and manage invoices
-* 📦 Add, edit, and delete products
-* 💰 Automatic bill calculations
-* 📊 Track sales history
-* 📄 Export sales reports as PDF
-* 🔒 Simple authentication
-* 💾 Local SQLite database (offline support)
-* ⚡ Fast desktop experience powered by Electron
+- 🧾 Create and manage invoices
+- 📦 Add, edit, and delete products
+- 💰 Automatic bill calculations
+- 📊 Track sales history
+- 📄 Export sales reports as PDF
+- 🔒 Simple authentication
+- 💾 Local SQLite database (offline support)
+- ⚡ Fast desktop experience powered by Electron
 
 ---
 
 ## 🖥️ Screenshots
 
-> Add screenshots here after your first release.
+<h3 align="center">Home Screen</h3>
 
-Example:
+<p align="center">
+  <img src="./assets/Home.png" alt="Ledgerly Home Screen" width="900">
+</p>
 
-```md
-![Dashboard](./assets/dashboard.png)
+<h3 align="center">Billing Screen</h3>
 
-![Billing Screen](./assets/billing.png)
-```
+<p align="center">
+  <img src="./assets/Billing.png" alt="Ledgerly Billing Screen" width="900">
+</p>
+
+<h3 align="center">Products Screen</h3>
+
+<p align="center">
+  <img src="./assets/Products.png" alt="Ledgerly Products Screen" width="900">
+</p>
+
+<h3 align="center">Reports Screen</h3>
+
+<p align="center">
+  <img src="./assets/Reports.png" alt="Ledgerly Reports Screen" width="900">
+</p>
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Electron.js
-* React
-* Vite
-* TypeScript
-* SQLite (better-sqlite3)
-* Electron Builder
+- Electron.js
+- React
+- Vite
+- TypeScript
+- SQLite (better-sqlite3)
+- Electron Builder
 
 ---
 

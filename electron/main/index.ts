@@ -1,4 +1,4 @@
-import { app, BrowserWindow, shell, ipcMain } from 'electron'
+import { app, BrowserWindow, shell, ipcMain, Menu } from 'electron'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 import os from 'node:os'
@@ -249,6 +249,7 @@ async function createWindow() {
 app.whenReady().then(() => {
   initDatabase(app)
   registerIpc()
+  Menu.setApplicationMenu(null)
   createWindow()
 })
 
